@@ -1,0 +1,83 @@
+/* ── Mode tabs ── */
+.post-mode-tabs {
+  display: flex;
+  gap: 0;
+  border: 2px solid #222;
+  width: 100%;
+  max-width: 620px;
+}
+
+.post-mode-tab {
+  flex: 1;
+  padding: 10px;
+  font-family: var(--mc-pixel-font);
+  font-size: 7px;
+  letter-spacing: 1px;
+  background: #0a0a0a;
+  color: #444;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.post-mode-tab.active {
+  background: #141414;
+  color: #ccc;
+  border-bottom: 2px solid var(--mc-grass);
+}
+
+.post-mode-tab:hover:not(.active) {
+  background: #111;
+  color: #666;
+}
+
+/* ── Score row ── */
+.post-score-row {
+  display: flex;
+  gap: 16px;
+}
+
+.post-score-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.post-score-label {
+  font-family: var(--mc-pixel-font);
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+.post-score-value {
+  font-family: var(--mc-pixel-font);
+  font-size: clamp(11px, 2vw, 15px);
+}
+
+/* ── Reasons list ── */
+.post-reasons {
+  border-top: 2px solid #222;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-reasons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-reasons-list li {
+  font-family: var(--mc-body-font);
+  font-size: 13px;
+  color: #bbb;
+  border-left: 3px solid;
+  padding-left: 10px;
+  line-height: 1.5;
+}

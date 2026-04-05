@@ -1,0 +1,237 @@
+/* ── Two-button row ── */
+.profile-btn-row {
+  display: flex;
+  gap: 14px;
+  max-width: 620px;
+  width: 100%;
+}
+
+.profile-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 10px;
+  font-family: var(--mc-pixel-font);
+  font-size: 7px;
+  letter-spacing: 1px;
+  border: 3px solid;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 4px 4px 0 #000;
+}
+
+.profile-btn:hover  { transform: translateY(-2px); box-shadow: 6px 6px 0 #000; }
+.profile-btn:active { transform: translateY(1px);  box-shadow: 2px 2px 0 #000; }
+
+.profile-btn-credibility {
+  background: #0d3b1e;
+  border-color: var(--mc-grass);
+  color: var(--mc-grass);
+}
+
+.profile-btn-full {
+  background: #0d2a38;
+  border-color: #4dd0e1;
+  color: #4dd0e1;
+}
+
+/* ── Summary text ── */
+.profile-summary {
+  font-family: var(--mc-body-font);
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.6;
+  border-left: 3px solid #444;
+  padding-left: 12px;
+}
+
+/* ── Flag items ── */
+.profile-flag {
+  font-family: var(--mc-body-font);
+  font-size: 12px;
+  color: #aaa;
+  padding: 4px 0;
+  border-bottom: 1px solid #1e1e1e;
+  line-height: 1.5;
+}
+
+.profile-flag:last-child { border-bottom: none; }
+
+/* ── Domain info grid ── */
+.domain-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.domain-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.domain-info-row:last-child { border-bottom: none; }
+
+.domain-info-key {
+  font-family: var(--mc-pixel-font);
+  font-size: 6px;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.domain-info-val {
+  font-family: var(--mc-body-font);
+  font-size: 12px;
+  color: #ccc;
+  text-align: right;
+}
+
+/* ── Fallback notice ── */
+.profile-fallback-note {
+  font-family: var(--mc-body-font);
+  font-size: 12px;
+  color: #ffb300;
+  background: rgba(255,179,0,0.07);
+  border: 1px solid rgba(255,179,0,0.3);
+  padding: 8px 12px;
+  line-height: 1.5;
+}
+
+/* ── Reason items ── */
+.profile-reason {
+  font-family: var(--mc-body-font);
+  font-size: 13px;
+  color: #bbb;
+  border-left: 3px solid;
+  padding-left: 10px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+/* ── Full Analyzer post cards ── */
+.fa-post-card {
+  border: 1px solid #2a2a2a;
+  background: #0e0e0e;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.fa-post-card.fa-error {
+  border-color: #3a1a1a;
+  background: #1a0a0a;
+}
+
+.fa-post-error {
+  font-family: var(--mc-body-font);
+  font-size: 12px;
+  color: #e53935;
+}
+
+.fa-post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.fa-post-num {
+  font-family: var(--mc-pixel-font);
+  font-size: 6px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.fa-verdict {
+  font-family: var(--mc-pixel-font);
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+.fa-confidence {
+  font-family: var(--mc-body-font);
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.fa-caption {
+  font-family: var(--mc-body-font);
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 10px;
+  border-left: 3px solid #333;
+  padding-left: 8px;
+}
+
+.fa-explanation {
+  font-family: var(--mc-body-font);
+  font-size: 12px;
+  color: #aaa;
+  margin: 8px 0;
+}
+
+.fa-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 10px 0;
+}
+
+.fa-field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fa-field-name {
+  font-family: var(--mc-pixel-font);
+  font-size: 5px;
+  color: #555;
+  letter-spacing: 0.5px;
+  width: 120px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.fa-field-bar-track {
+  flex: 1;
+  height: 4px;
+  background: #1a1a1a;
+}
+
+.fa-field-bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.fa-field-score {
+  font-family: var(--mc-body-font);
+  font-size: 11px;
+  width: 32px;
+  text-align: right;
+}
+
+.fa-flags {
+  margin: 8px 0 4px;
+}
+
+.fa-recommendation {
+  font-family: var(--mc-body-font);
+  font-size: 11px;
+  color: #666;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ── Disabled Full Analyzer button ── */
+.profile-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 4px 4px 0 #000;
+}

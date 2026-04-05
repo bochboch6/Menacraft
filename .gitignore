@@ -1,0 +1,5 @@
+/front/frontend/node_modules
+/server/node_modules
+.claude/
+*.env
+.env*
